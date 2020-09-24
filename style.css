@@ -73,38 +73,34 @@ hr {
     position: relative;
 }
 
-.portfolio .card::before {
-    content: '';
+.portfolio .card::before, .portfolio .card::after {
     display: block;
     position: absolute;
+    visibility: hidden;
+    z-index: 1;
+    transition: all .1s ease-in-out;
+}
+
+.portfolio .card::before {
+    content: '';
     top: 0;
     left: 0;
     width: 100%;
     height: 100%;
     background-color: rgba(26, 188, 156, .9);
-    z-index: 2;
-    visibility: hidden;
-    transition: all .1s ease-in-out;
-}
-
-.portfolio .card:hover:before {
-    visibility: visible;
 }
 
 .portfolio .card::after {
-    content: 'test';
-    display: block;
-    position: absolute;
+    content: '\f067';
+    font-family: "Font Awesome 5 Free";
+    font-weight: bold;
+    font-size: 60px;
+    color: #ffffff;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    font-size: 30px;
-    color: #ffffff;
-    z-index: 2;
-    visibility: hidden;
-    transition: all .1s ease-in-out;
 }
 
-.portfolio .card:hover:after {
+.portfolio .card:hover:before, .portfolio .card:hover:after {
     visibility: visible;
 }
