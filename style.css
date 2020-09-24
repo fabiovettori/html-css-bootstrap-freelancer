@@ -1,8 +1,13 @@
 /* GENERAL SETTING */
-body {
-    font-family: 'Montserrat', sans-serif;
+hr {
+    display: inline-block;
+    height: 3px;
+    width: 100px;
+    line-height: 36px;
+    vertical-align: middle;
 }
 
+/* JUMBOTRON */
 .jumbotron {
     background-color: #1abc9c;
     color: #ffffff;
@@ -29,14 +34,32 @@ body {
 
 .jumbotron span {
     font-size: 36px;
-    margin: 0 20px
+    margin: 0 20px;
+    vertical-align: middle;
 }
 
 .jumbotron hr {
-    display: inline-block;
-    color: #ffffff;
-    height: 2px;
-    width: 100px;
-    line-height: 36px;
     background-color: #ffffff;
+}
+
+/* PORTFOLIO */
+.portfolio {
+    color: #2c3e50;
+}
+
+.portfolio h2 {
+    font-family: 'Montserrat', sans-serif;
+    text-transform: uppercase;
+    font-weight: 700;
+    font-size: 48px;
+}
+
+.portfolio span {
+    font-size: 36px;
+    margin: 0 20px;
+    vertical-align: middle;
+}
+
+.portfolio hr {
+    background-color: #2c3e50;
 }
