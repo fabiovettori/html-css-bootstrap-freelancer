@@ -23,7 +23,7 @@ hr {
     font-family: 'Montserrat', sans-serif;
     text-transform: uppercase;
     font-weight: 700;
-    font-size: 64px;
+    font-size: 48px;
 }
 
 .jumbotron p {
@@ -89,8 +89,9 @@ hr {
 .portfolio .card::before {
     content: '';
     top: 15px;
-    left: 0;
-    width: 100%;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 400px;
     height: calc(100% - 30px);
     background-color: rgba(26, 188, 156, .9);
 }
@@ -113,6 +114,11 @@ hr {
 .card {
     padding-top: 15px;
     padding-bottom: 15px;
+}
+
+.card img {
+    width: 400px;
+    margin: auto;
 }
 
 /* ABOUT */
@@ -273,6 +279,7 @@ hr {
     font-weight: 500;
     font-size: 20px;
     text-align: center;
+    white-space: pre-line;
 }
 
 .social-media span {
@@ -298,6 +305,31 @@ hr {
     margin: 20px 0;
 }
 
+
+/* SCROLLER */
+.scroller {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    width: 60px;
+    height: 60px;
+    line-height: 60px;
+    border-radius: 5px;
+    background-color: rgba(33, 37, 41, 0.5);
+    color: #ffffff;
+    font-size: 22px;
+    text-align: center;
+}
+
+.scroller a {
+    text-decoration: none;
+    color: #ffffff;
+}
+
+.scroller a:hover {
+    color: unset;
+}
+
 @media screen and (min-width: 992px) {
     .about.container, .contacts.container {
         max-width: 800px;
@@ -307,5 +339,21 @@ hr {
         max-width: calc((100% - 150px) / 3);
         margin-left: 25px;
         margin-right: 25px;
+    }
+}
+
+@media screen and (min-width: 764px) {
+    .jumbotron h1 {
+        font-size: 64px;
+    }
+
+    .portfolio .card::before {
+        left: 50%;
+        transform: translateX(-50%);
+        width: 100%;
+    }
+
+    .scroller {
+        display: none;
     }
 }
