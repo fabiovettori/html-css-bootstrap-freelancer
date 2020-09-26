@@ -296,6 +296,28 @@ hr {
     color: #7d858c;
 }
 
+.form-group {
+    position: relative;
+    margin-bottom: 5px;
+}
+
+.form-group label {
+    visibility: hidden;
+    display: block;
+    position: absolute;
+    top: -15px;
+    left: 0;
+    transition: all .3s ease-in-out;
+    opacity: 0;
+    color: #1abc9c;
+}
+
+.form-group input:focus ~ label, .form-group textarea:focus ~ label {
+    visibility: visible;
+    top: 0;
+    opacity: 1;
+}
+
 
 /* FOOTER */
 .footer-top .col-sm-12 {
