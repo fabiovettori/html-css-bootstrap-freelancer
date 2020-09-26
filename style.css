@@ -25,8 +25,28 @@ hr {
     padding: 25px 0;
 }
 
+
 .navbar-default .navbar-brand, .navbar-default .navbar-nav > li > a {
     color: #ffffff;
+}
+
+.navbar-default .navbar-brand:hover {
+    color: #ffffff;
+}
+
+.navbar-default .navbar-nav > li > a:hover {
+    color: #1abc9c;
+}
+
+.navbar-default .navbar-nav > .active > a {
+    background-color: #1abc9c;
+    color: #ffffff;
+    border-radius: 5px;
+}
+
+.navbar-default .navbar-nav > .active > a:hover {
+    background-color: #ffffff;
+    color: #1abc9c;
 }
 
 .navbar-default .navbar-brand {
