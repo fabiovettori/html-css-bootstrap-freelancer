@@ -30,7 +30,7 @@ hr {
 }
 
 .navbar-default .navbar-brand {
-    font-size: 24px;
+    font-size: 18px;
     margin-left: 30px;
 }
 
@@ -44,8 +44,8 @@ hr {
 }
 
 .navbar-toggle {
-    margin-top: 16px;
-    margin-bottom: 16px;
+    margin-top: 15px;
+    margin-bottom: 15px;
     border: 0;
     padding: 10px;
     background-color: #1abc9c;
@@ -415,5 +415,9 @@ hr {
 
     .scroller {
         display: none;
+    }
+
+    .navbar-default .navbar-brand {
+        font-size: 24px;
     }
 }
