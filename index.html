@@ -168,28 +168,28 @@
             </div>
 
             <div class="contacts container">
-                <form class="contacts" action="index.html" method="post" class="text-left">
-                    <div class="form-group">
-                        <input type="text" name="" placeholder="Name" class="form-control" id="name">
+                <form class="contacts" class="text-left">
+                    <div class="form-group" id="contacts">
+                        <input type="text" placeholder="Name" class="form-control" id="name" required>
                         <label for="name" class="text-capitalize">name</label>
                     </div>
 
                     <div class="form-group">
-                        <input type="email" name="" placeholder="Email Adress" class="form-control" id="email">
+                        <input type="email" placeholder="Email Adress" class="form-control" id="email" required>
                         <label for="email" class="text-capitalize">email</label>
                     </div>
 
                     <div class="form-group">
-                        <input type="tel" name="" placeholder="Phone Number" class="form-control" id="phone-number">
+                        <input type="tel" placeholder="Phone Number" class="form-control" id="phone-number" required>
                         <label for="phone-number" class="text-capitalize">phone number</label>
                     </div>
 
                     <div class="form-group">
-                        <textarea name="message" rows="3" cols="80" placeholder="Message" class="form-control" id="message"></textarea>
+                        <textarea rows="3" cols="80" placeholder="Message" class="form-control" id="message" required></textarea>
                         <label for="message" class="text-capitalize">message</label>
                     </div>
 
-                    <a type="submit" href="#">Send</a>
+                    <input type="submit" value="send" class="text-capitalize">
                 </form>
             </div>
         </main>

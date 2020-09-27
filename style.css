@@ -168,6 +168,7 @@ hr {
     transform: translateX(-50%);
     width: 400px;
     height: calc(100% - 30px);
+    border-radius: 6px;
     background-color: rgba(26, 188, 156, .9);
 }
 
@@ -275,17 +276,18 @@ hr {
     background-color: #2c3e50;
 }
 
-.contacts a {
+.contacts [type="submit"] {
     color: #ffffff;
     background-color: #1abc9c;
     font-size: 20px;
     padding: 20px;
     border-radius: 5px;
+    border: 0;
 }
 
-.contacts a:hover {
+.contacts [type="submit"]:hover {
     text-decoration: none;
-    color: #fff;
+    color: #ffffff;
     background-color: #159a80;
     border-color: #148f77;
 }
@@ -421,11 +423,15 @@ hr {
     color: #ffffff;
     font-size: 22px;
     text-align: center;
+    z-index: 2;
 }
 
 .scroller a {
+    display: inline-block;
     text-decoration: none;
     color: #ffffff;
+    width: 100%;
+    line-height: 60px;
 }
 
 .scroller a:hover {
